@@ -4,10 +4,107 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+    font-family: 'Courier New', Courier, monospace;
 }
 
 :root {
     font-size: 62.5%;
 
-    --heading-font-size: 3rem;
+
+    --heading-font-size: 4rem;
+}
+
+
+
+#main{
+    background-color: rgb(236, 236, 236);
+    margin: 30px 10px;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+#title{
+    text-align: center;
+    font-size: var(--heading-font-size);
+    color: rgb(67, 67, 67);
+    font-weight: bolder;
+    margin: 20px 0;
+    letter-spacing: 0px;
+}
+
+#tag-line{
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+}
+
+
+
+
+#img-div{
+    width: 100%;
+    background-color: white;
+    padding: 15px;
+}
+#image{
+    max-width: 100%;
+    height: auto;
+
+    display: block;
+    margin: auto;
+}
+#img-caption{
+    margin: 20px 20px 10px 20px;
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+
+
+
+
+#tribute-info{
+    width: 100%;
+    max-width: 600px;
+
+    margin: auto;
+}
+#tribute-info h3{
+    font-size: 2rem;
+    margin: 50px 0;
+}
+#tribute-info ul li{
+    font-size: 1.6rem;
+    margin: 30px 0;
+}
+#tribute-info blockquote{
+    font-style: italic;
+    margin: 50px 0;
+    letter-spacing: -1px;
+    font-size: 1.6rem;
+}
+
+
+
+
+main > strong{
+    display: block;
+    font-size: 1.9rem;
+    text-align: center;
+}
+
+
+
+
+
+@media screen and (max-width: 768px){
+    :root {
+        font-size: 56.25%;
+    }
+}
+@media screen and (max-width: 574px){
+    :root {
+        font-size: 50%;
+    }
 }
